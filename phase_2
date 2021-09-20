@@ -123,7 +123,7 @@ End of assembler dump.
 => 0x0000000000400f35 <+41>:    add    $0x4,%rbx
    0x0000000000400f39 <+45>:    cmp    %rbp,%rbx
 
-//We can see that %rbx holds each digit that we inputted from "0 1 2 3 4 5". We are looping through each digit
+//We can see that %rbx holds each digit that we inputed from "0 1 2 3 4 5". We are looping through each digit
 in our input and comparing it to the correct digits, which are in %rax.
    0x0000000000400ee1 <+56>:  mov    0x4(%rbx),%eax
    0x0000000000400ee4 <+59>:  add    (%rbx),%eax
