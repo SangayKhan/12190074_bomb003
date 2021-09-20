@@ -134,7 +134,9 @@ in our input and comparing it to the correct digits, which are in %rax.
    0x0000000000400ef4 <+75>:  cmp    %rbp,%rbx
    0x0000000000400ef7 <+78>:  jne    0x400ee1 <phase_2+56>
    
-Looking at <+59>, we see we are adding first(0) value in %rbx to value in %eax which was moved from 4(%rbx) to %eax, which was 1. lets change our input to "0 1 1 3 4 5" to see if we can pass this iteration for third place value 1. ==> when we do this, adding 1 does pass this iteration of the loop. At this point, we can see at <+59> when looped again, we get a pattern of fibonacci number.
+Looking at <+59>, we see we are adding first(0) value in %rbx to value in %eax which was moved from 4(%rbx) to %eax, which was 1. 
+lets change our input to "0 1 1 3 4 5" to see if we can pass this iteration for third place value 1. ==> when we do this, adding 1 
+does pass this iteration of the loop. At this point, we can see at <+59> when looped again, we get a pattern of fibonacci number.
 
 When we put "0 1 1 2 3 5" this works!!
 
