@@ -63,6 +63,31 @@ Dump of assembler code for function func4:
    0x0000000000400ff9 <+61>:  ret
 End of assembler dump.
 
+c code for function func4():
+int func4(edi, esi, edx){
+   eax = edx - esi;
+   eax = eax >> 1;
+   ecx = rax + rsi;
+
+
+   if(ecx <= edi){
+      eax = 0;
+      if(ecx < edi){
+         esi = rcx + 1;
+         func4(edi, esi, edx);
+         eax = 1 + eax + eax;
+      }
+
+      return eax;
+   }
+
+   edx = rcx - 1;
+   func4(edi, esi, edx);
+   eax = eax + eax;
+
+   return eax;
+}
+
 //Solution
 We know our number needs to be between 0 and 14 and this problem involves recursion. We also know that the last input needs to be 2. So 
 our format for the answer is "x 2". I just plugged in numbers from 0-14 for the first input and 4 worked well. So answer is 4 2
