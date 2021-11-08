@@ -39,6 +39,46 @@ Dump of assembler code for function phase_5:
 
 End of assembler dump.
 
+code for phase_5
+int phase_5()
+{
+   int numArray[16] = {10, 2, 14, 7, 8, 12, 15, 11, 0, 4, 1, 13, 3, 9, 6, 5};
+   int edx = 0;
+   int eax = 0;
+   int ecx = 0;
+
+   char *cString = NULL;
+   size_t len = 0;
+   
+   readOK = input here;
+   if (readOK > 1) {
+      
+      q = (q & 0xf);
+      if (q == 0xf)
+         explode_bomb();
+         
+      eax = q;
+      do {
+         edx = (edx + 0x1);
+         eax = numArray[eax]
+         ecx = (ecx + eax);
+      }while (eax != 0xf)
+
+   }
+   else {
+      explode_bomb();
+   }
+
+   q = eax;
+   if (edx != 15)
+      explode_bomb();
+
+   if (ecx == p)
+      input pass
+   else
+      explode bomb
+}
+
 The first input shoud be such that it should be the index of the array where the element in that index of array acts index to another element in the array and like this
 it will point to all the element in the array except the input that user have given in the loop until the pointed element is 15 at the same time while it is iteraing 
 it will sum all the pointed elements which should be equals to the second user input. So the solution is 5 115
